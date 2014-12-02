@@ -10,4 +10,6 @@
   :scm {:name "git"
         :url "https://github.com/ccfontes/escutcheon"}
 
-  :repl-options {:init-ns coat.arms})
+  :repl-options {:init-ns coat.arms}
+
+  :dependencies [[org.clojure/clojure "1.5.1"] [hiccup "1.0.5"]])
