@@ -1,4 +1,4 @@
-(defproject escutcheon "0.1.0"
+(defproject escutcheon "0.2.0"
 
   :description "A Clojure Hiccup Coat of Arms for thine Website, or "favicon", in the language of the people"
 

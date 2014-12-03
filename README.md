@@ -35,36 +35,35 @@ Escutcheon
 
 — by Kathy Paysen
 
-A Clojure Hiccup Coat of Arms for thine Website, or "favicon", in the language of the common man 
+Behold Escutcheon, a Clojure Coat of Arms for thine Website, or "favicon", in the language of the cottier. 
 
 ### Install
 ----------
-Add the following to the `:dependencies` vector of thine horse:
+Add the following to the `:dependencies` vector of thine steed:
 
 [![clojars version](https://clojars.org/escutcheon/latest-version.svg?raw=true)]
 (https://clojars.org/escutcheon)
 
 ### Generating miniature Coat of Arms and xml
-By order of the king, `coat.arms/install` uses `icon.ico`,
+By order of The King, the resources, when available, shalt be named like: `coat.arms/install` uses `icon.ico`,
 `browserconfig.xml`, `16.png`, `32.png`, `57.png`, `64.png`, `72.png`,
 `76.png`, `96.png`, `114.png`, `120.png`, `144.png`, `152.png`, `160.png`,
-and `196.png` filenames when available. These files can be generated at
+and `196.png`. These files can be generated at
 [faviconit.com](http://faviconit.com).
 
 ### For Honour!
 ----------
-Insert `escutcheon/install` inside the `head` element. On the REPL:
+Wondrous wright, prithee `escutcheon/install` it inside the `head` element of thine Website, and swash your sword at the REPL:
 ```clojure
 => (require '[coat.arms :as escutcheon])
 
-=> (escutcheon/install ; use this to prefix the `.png` filenames
-                       :prefix "favicon-"
+=> (escutcheon/install :png-prefix "favicon-"
                        :img "/img/favicon"
                        :xml "/xml")
 ;=> "<link href=\"/img/favicon/icon.ico\" rel=\"shortcut icon\" /><link href=\"/img/favicon/icon.ico\" rel=\"icon\" sizes=\"16x16 32x32 64x64\" /><link href=\"/img/favicon/favicon-196.png\" rel=\"icon\" sizes=\"196x196\" type=\"image/png\" /><link href=\"/img/favicon/favicon-160.png\" rel=\"icon\" sizes=\"160x160\" type=\"image/png\" /><link href=\"/img/favicon/favicon-96.png\" rel=\"icon\" sizes=\"96x96\" type=\"image/png\" /><link href=\"/img/favicon/favicon-64.png\" rel=\"icon\" sizes=\"64x64\" type=\"image/png\" /><link href=\"/img/favicon/favicon-32.png\" rel=\"icon\" sizes=\"32x32\" type=\"image/png\" /><link href=\"/img/favicon/favicon-16.png\" rel=\"icon\" sizes=\"16x16\" type=\"image/png\" /><link href=\"/img/favicon/favicon-152.png\" rel=\"apple-touch-icon\" sizes=\"152x152\" /><link href=\"/img/favicon/favicon-144.png\" rel=\"apple-touch-icon\" sizes=\"144x144\" /><link href=\"/img/favicon/favicon-120.png\" rel=\"apple-touch-icon\" sizes=\"120x120\" /><link href=\"/img/favicon/favicon-114.png\" rel=\"apple-touch-icon\" sizes=\"114x114\" /><link href=\"/img/favicon/favicon-76.png\" rel=\"apple-touch-icon\" sizes=\"76x76\" /><link href=\"/img/favicon/favicon-72.png\" rel=\"apple-touch-icon\" sizes=\"72x72\" /><link href=\"/img/favicon/favicon-57.png\" rel=\"apple-touch-icon\" /><meta content=\"#FFFFFF\" name=\"msapplication-TileColor\" /><meta content=\"/img/favicon/favicon-144.png\" name=\"msapplication-TileImage\" /><meta content=\"/xml/browserconfig.xml\" name=\"msapplication-config\" />"
 ```
 
-### May thou become a Household using this kind of Coat of Arms
+### May ye become a Household using this kind of artifact
 ----------
 [kanasubs.com](http://www.kanasubs.com) — Convert raw subtitles in Kanji to
 Kana or Romaji online.
